@@ -26,3 +26,25 @@ const todoList = ["Milk", "Cow"];
 
 const name = "Jurgen";
 console.log(`Hello my name is ${name}`);
+
+// OBJECT LITERALS old JS
+// function getBook(title, author) {
+//   return {
+//     title: title,
+//     author: author,
+//   };
+// }
+
+// var book = getBook("Fight Club", "Chuck Palahniuk");
+// console.log(book);
+
+// ES6 only difference is if the parameters are the same, you can keep it short
+function getBook(title, author) {
+  return {
+    title,
+    author,
+  };
+}
+
+let book = getBook("Fight Club", "Chuck Palahniuk");
+console.log(book);
