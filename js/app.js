@@ -38,7 +38,8 @@ console.log(`Hello my name is ${name}`);
 // var book = getBook("Fight Club", "Chuck Palahniuk");
 // console.log(book);
 
-// ES6 only difference is if the parameters are the same, you can keep it short
+// ES6 only difference is if the parameters are the same,
+// you can keep it short
 function getBook(title, author) {
   return {
     title,
@@ -48,3 +49,26 @@ function getBook(title, author) {
 
 let book = getBook("Fight Club", "Chuck Palahniuk");
 console.log(book);
+
+// OBJECT DECONSTRUCTION old JS
+
+var user = {
+  name: "Jurgen",
+  age: 29,
+};
+
+var myName = user.name;
+console.log(myName);
+
+// ES6
+const list = {
+  name: "Shopping List",
+  items: ["Milk", "Cow"],
+};
+
+let listName = list.name;
+let firstItem = list.items[0];
+let secondItem = list.items[1];
+console.log(listName);
+console.log(firstItem);
+console.log(secondItem);
