@@ -24,8 +24,8 @@ const todoList = ["Milk", "Cow"];
 
 // Concatination ES6
 
-const name = "Jurgen";
-console.log(`Hello my name is ${name}`);
+// const name = "Jurgen";
+// console.log(`Hello my name is ${name}`);
 
 // OBJECT LITERALS old JS
 // function getBook(title, author) {
@@ -40,35 +40,53 @@ console.log(`Hello my name is ${name}`);
 
 // ES6 only difference is if the parameters are the same,
 // you can keep it short
-function getBook(title, author) {
-  return {
-    title,
-    author,
-  };
-}
+// function getBook(title, author) {
+//   return {
+//     title,
+//     author,
+//   };
+// }
 
-let book = getBook("Fight Club", "Chuck Palahniuk");
-console.log(book);
+// let book = getBook("Fight Club", "Chuck Palahniuk");
+// console.log(book);
 
 // OBJECT DECONSTRUCTION old JS
 
-var user = {
-  name: "Jurgen",
-  age: 29,
-};
+// var user = {
+//   name: "Jurgen",
+//   age: 29,
+// };
 
-var myName = user.name;
-console.log(myName);
+// var myName = user.name;
+// console.log(myName);
 
 // ES6
-const list = {
-  name: "Shopping List",
-  items: ["Milk", "Cow"],
+// const list = {
+//   names: "Shopping List",
+//   items: ["Milk", "Cow"],
+// };
+
+// let listName = list.names;
+// let firstItem = list.items[0];
+// let secondItem = list.items[1];
+// console.log(listName);
+// console.log(firstItem);
+// console.log(secondItem);
+
+// // we can add the different things we want from the list and it's equal to from where this data is being extracted from
+// const { names, items } = list;
+// console.log(names, items);
+
+// FUNCTIONS old JS
+function sayName() {
+  console.log("Hello I am Jurgen");
+}
+
+var sayAge = function () {
+  console.log("I am twenty nine years old");
 };
 
-let listName = list.name;
-let firstItem = list.items[0];
-let secondItem = list.items[1];
-console.log(listName);
-console.log(firstItem);
-console.log(secondItem);
+sayName();
+sayAge();
+
+// ES6
