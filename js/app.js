@@ -89,20 +89,21 @@
 // sayName();
 // sayAge();
 
-var user = {
-  name: "Jurgen",
-  age: 29,
-  sayName: function () {
-    console.log("My name is " + this.name);
-    var that = this;
-    var fullIntro = function () {
-      console.log("My name is " + that.name + " and my age is " + that.age);
-    };
-    fullIntro();
-  },
-};
+// var user = {
+//   name: "Jurgen",
+//   age: 29,
+//   sayName: function () {
+//     console.log("My name is " + this.name);
+//     var that = this;
+//     var fullIntro = function () {
+//       console.log("My name is " + that.name + " and my age is " + that.age);
+//     };
+//     fullIntro();
+//   },
+// };
 
-user.sayName();
+// user.sayName();
+
 // // ES6
 // // curly braces are for when you're returning multiple things
 // const sayLocation = (location) => {
@@ -113,3 +114,17 @@ user.sayName();
 // // you can erase the curly braces if you're only returning one thing when you call the function
 // const whereYouFrom = (city) => console.log(`I'm from ${city}`);
 // whereYouFrom("Brooklyn");
+
+// const user = {
+//   name: "Jurgen",
+//   age: 25,
+//   sayName: function () {
+//     console.log(`My name is ${this.name}`);
+//     const fullIntro = () => {
+//       console.log(`My name is ${this.name} and I am ${this.age} years old.`);
+//     };
+//     fullIntro();
+//   },
+// };
+
+// user.sayName();
