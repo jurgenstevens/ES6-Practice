@@ -90,3 +90,8 @@ sayName();
 sayAge();
 
 // ES6
+
+const sayLocation = (location) => {
+  console.log(`I live in ${location}`);
+};
+sayLocation("Chicago");
