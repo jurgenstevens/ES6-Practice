@@ -105,15 +105,15 @@
 // user.sayName();
 
 // // ES6
-// // curly braces are for when you're returning multiple things
+// curly braces are for when you're returning multiple things
 // const sayLocation = (location) => {
 //   console.log(`I live in ${location}`);
 // };
 // sayLocation("Chicago");
 
 // // you can erase the curly braces if you're only returning one thing when you call the function
-// const whereYouFrom = (city) => console.log(`I'm from ${city}`);
-// whereYouFrom("Brooklyn");
+// const whereYouFrom = (neighborhood) => console.log(`I'm from ${neighborhood}`);
+// whereYouFrom("Bridgeport");
 
 // const user = {
 //   name: "Jurgen",
