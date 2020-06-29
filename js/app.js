@@ -15,7 +15,7 @@
 
 // ES6
 
-const todoList = ["Milk", "Cow"];
+// const todoList = ["Milk", "Cow"];
 // you can't reassign variables with const
 
 // CONCATINATION old JS
@@ -78,20 +78,38 @@ const todoList = ["Milk", "Cow"];
 // console.log(names, items);
 
 // FUNCTIONS old JS
-function sayName() {
-  console.log("Hello I am Jurgen");
-}
+// function sayName() {
+//   console.log("Hello I am Jurgen");
+// }
 
-var sayAge = function () {
-  console.log("I am twenty nine years old");
+// var sayAge = function () {
+//   console.log("I am twenty nine years old");
+// };
+
+// sayName();
+// sayAge();
+
+var user = {
+  name: "Jurgen",
+  age: 29,
+  sayName: function () {
+    console.log("My name is " + this.name);
+    var that = this;
+    var fullIntro = function () {
+      console.log("My name is " + that.name + " and my age is " + that.age);
+    };
+    fullIntro();
+  },
 };
 
-sayName();
-sayAge();
+user.sayName();
+// // ES6
+// // curly braces are for when you're returning multiple things
+// const sayLocation = (location) => {
+//   console.log(`I live in ${location}`);
+// };
+// sayLocation("Chicago");
 
-// ES6
-
-const sayLocation = (location) => {
-  console.log(`I live in ${location}`);
-};
-sayLocation("Chicago");
+// // you can erase the curly braces if you're only returning one thing when you call the function
+// const whereYouFrom = (city) => console.log(`I'm from ${city}`);
+// whereYouFrom("Brooklyn");
