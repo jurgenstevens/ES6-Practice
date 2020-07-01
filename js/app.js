@@ -144,3 +144,10 @@
 //     this.style.display = "none";
 //   };
 // });
+
+// DEFAULT PARAMETERS Old JS
+function multiply(x, y) {
+  console.log(x * y);
+}
+
+multiply(5, 10);
