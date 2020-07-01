@@ -147,7 +147,18 @@
 
 // DEFAULT PARAMETERS Old JS
 function multiply(x, y) {
-  console.log(x * y);
+  // you can set a default value
+  let a = x || 0;
+  let b = y || 0;
+  console.log(a * b);
 }
-
 multiply(5, 10);
+// however it returns NaN if the parameter is empty
+
+// ES6
+// you can add a value in the parameter so it doesn't appear as NaN
+const add = (c = 0, d = 0) => {
+  console.log(c + d);
+};
+
+add();
