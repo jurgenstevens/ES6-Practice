@@ -104,7 +104,7 @@
 
 // user.sayName();
 
-// // ES6
+// ES6
 // curly braces are for when you're returning multiple things
 // const sayLocation = (location) => {
 //   console.log(`I live in ${location}`);
@@ -128,3 +128,19 @@
 // };
 
 // user.sayName();
+
+// THIS IN FUNCTIONS Old JavaScript
+// button.addEventListener("click", function () {
+//   var addFade = function () {
+//     // this won't refer to the button so the fade function won't work
+//     this.style.display = "none";
+//   };
+// });
+
+//ES6
+// button.addEventListener("click", function () {
+//   let addFade = () => {
+//     // use an arrow function instead and it will work
+//     this.style.display = "none";
+//   };
+// });
