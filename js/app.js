@@ -146,19 +146,81 @@
 // });
 
 // DEFAULT PARAMETERS Old JS
-function multiply(x, y) {
-  // you can set a default value
-  let a = x || 0;
-  let b = y || 0;
-  console.log(a * b);
+// function multiply(x, y) {
+//   // you can set a default value
+//   let a = x || 0;
+//   let b = y || 0;
+//   console.log(a * b);
+// }
+// multiply(5, 10);
+// // however it returns NaN if the parameter is empty
+
+// // ES6
+// // you can add a value in the parameter so it doesn't appear as NaN
+// const add = (c = 0, d = 0) => {
+//   console.log(c + d);
+// };
+
+// add();
+
+// x = { foo: "bar" };
+// y = { baz: x };
+// z = y["baz"]["foo"];
+
+// function foo() {
+//   function bar() {
+//     setTimeout(() => {
+//       console.log("Curly");
+//     }, 1000);
+//   }
+//   console.log("Larry");
+//   return bar;
+// }
+
+// let x = foo();
+// x();
+// console.log("Moe");
+
+// function makeAdder(x) {
+//  return function(y)
+// }
+
+// var add5 = makeAdder(5);
+// var add8 = makeAdder(8);
+// var add20 = makeAdder(20);
+// assert(add5(10) === 15);
+// assert(add8(6) === 14);
+// assert(add20(10) === 26);
+
+// const f = (n) => (n <= 1 ? 1 : n * f(n - 1));
+
+// let g = f(4);
+// console.log(g);
+
+// function strToFloat(str) {
+//   return parseFloat(str);
+// }
+// strToFloat("asdf");
+
+// let event = {
+//   name: "Hot Dog and Burger Sunday",
+//   financials: {
+//     baseCost: "19.99",
+//     discountsAvailable: false,
+//     maxCost: "29.99",
+//   },
+//   subscribers: ["Tim"],
+// };
+
+// let eventPrice;
+
+// const assignEvent = ({ financials: { baseCost: price } }) =>
+//   (eventPrice = price);
+
+// assignEvent(event);
+
+function string(str) {
+  return str.split().join("cat");
 }
-multiply(5, 10);
-// however it returns NaN if the parameter is empty
 
-// ES6
-// you can add a value in the parameter so it doesn't appear as NaN
-const add = (c = 0, d = 0) => {
-  console.log(c + d);
-};
-
-add();
+string("dog");
