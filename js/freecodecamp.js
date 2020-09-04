@@ -60,3 +60,14 @@ console.log(product)
 // Dividing Numbers
 var quotient = 66 / 6;
 console.log(quotient)
+
+// Incrementing Numbers
+var myVar = 87;
+//  Only change code below this line
+myVar++;
+console.log(myVarr) // => 88
+
+// Decrementing Numbers
+var myVar = 91;
+myVar--;
+console.log(myVar) // => 90
