@@ -65,9 +65,33 @@ console.log(quotient)
 var myVar = 87;
 //  Only change code below this line
 myVar++;
-console.log(myVarr) // => 88
+console.log(myVar) // => 88
 
 // Decrementing Numbers
 var myVar = 91;
 myVar--;
 console.log(myVar) // => 90
+
+// Decimal Numbers
+var ourDecimal = 5.7;
+var myDecimal = 0.009;
+
+// Multiply Decimals
+var product = 2.0 * 2.5;
+console.log(product) // => 5
+// Divide decimals
+var quotient = 4.4 / 2.0
+console.log(quotient) // => 2.2
+// Finding a remainder
+var remainder;
+remainder = 11 % 3; // => 2
+console.log(remainder)
+
+// Compound Assignment with Augmented Addition
+var a = 3;
+var b = 17;
+var c = 12;
+// Only modify code below this line
+
+a = a + 12
+a += 12;
